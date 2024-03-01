@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | LJ.Photography</title>
+    <link rel="icon" href="/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="/">LJ.Photography</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/services">Our Services</a></li>
+          <li><a href="/photos">Example Photos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="portfolio" id="portfolio">
+        <h2>Example Photos</h2>
+        <p>Take a look on this page to find some amazing and high-quality photos taken by Joseph and Lucas!</p>
+        <ul class="cards">
+          <li class="card">
+            <img src="images/1.jpeg" alt="img">
+            <h3>Example #1</h3>
+            <p>Photographer: Lucas Egan-Beach</p>
+          </li>
+          <li class="card">
+            <img src="images/2.jpeg" alt="img">
+            <h3>Example #2</h3>
+            <p>Photographer: Lucas Egan-Beach</p>
+          </li>
+          <li class="card">
+            <img src="images/3.jpeg" alt="img">
+            <h3>Example #3</h3>
+            <p>Photographer: Lucas Egan-Beach</p>
+          </li>
+          <h1><b><u>MORE PHOTOS COMING SOON!!!</u></b></h1>
+        </ul>
+        <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+        <br><br>
+    <footer>
+      <div>
+        <span>&copy; 2024 Jack Palmer. All rights reserved.</span>
+      </div>
+    </footer>
+    <script>
+        window.onscroll = function() {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          var backToTopBtn = document.getElementById("backToTopBtn");
+  
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.style.display = "block";
+          } else {
+            backToTopBtn.style.display = "none";
+          }
+        }
+  
+        function scrollToTop() {
+          var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+          window.scrollTo(0, 0);
+        }
+      </script>
+  </body>
+</html>
