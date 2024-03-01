@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | LJ.Photography</title>
+    <link rel="icon" href="images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h2 class="logo"><a href="/">LJ.Photography</a></h2>
+        <input type="checkbox" id="menu-toggler">
+        <label for="menu-toggler" id="hamburger-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18V11H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </label>
+        <ul class="all-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/services">Our Services</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact" id="contact">
+      <h2>Services:</h2>
+      <p>Reach out to us for any inquiries or feedback.</p>
+      </section>
+    <section class="testimonials" id="testimonials">
+      <div class="testimonial-card">
+        <p class="testimonial-author">Casual Event Package -</p>
+        <p class="testimonial-quote">This package includes attendance at your event. Depending on the time of your event will decide the number of high-quality photographs delivered in 1-3 Days of your event. Prints will be available to purchase as add-ons.</p>
+        <p class="testimonial-quote">Price: Enquire</p>
+      </div><br><br>
+
+      <div class="testimonial-card">
+        <p class="testimonial-author">Sports Photography Package -</p>
+        <p class="testimonial-quote">This package includes portraits of all players and staff, team photos and many high-quality photos of your sporting event.</p>
+        <p class="testimonial-quote">Price: Enquire</p>
+      </div>
+    </section>
+        <button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
+        <br><br>
+    <footer>
+      <div>
+        <span>&copy; 2024 Jack Palmer. All rights reserved.</span>
+      </div>
+    </footer>
+    <script>
+        window.onscroll = function() {
+          scrollFunction();
+        };
+  
+        function scrollFunction() {
+          var backToTopBtn = document.getElementById("backToTopBtn");
+  
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopBtn.style.display = "block";
+          } else {
+            backToTopBtn.style.display = "none";
+          }
+        }
+  
+        function scrollToTop() {
+          var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+          window.scrollTo(0, 0);
+        }
+      </script>
+  </body>
+</html>
